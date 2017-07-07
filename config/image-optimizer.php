@@ -8,27 +8,11 @@ use Spatie\ImageOptimizer\Optimizers\Jpegoptim;
 
 return [
     'optimizers' => [
-
-        Jpegoptim::class => [
-            '--stip-all',
-            '--all-progressive',
-        ],
-
-        Pngquant::class => [
-            '--force',
-        ],
-        Optipng::class => [
-            '-i0',
-            '-o2',
-            '-quiet',
-        ],
-        Svgo::class => [
-            '--disable=cleanupIDs',
-        ],
-        Gifsicle::class => [
-            '-b',
-            '-O3',
-        ],
+        Jpegoptim::class => ['--stip-all', '--all-progressive'],
+        Pngquant::class => ['--force'],
+        Optipng::class => ['-i0', '-o2', '-quiet'],
+        Svgo::class => ['--disable=cleanupIDs'],
+        Gifsicle::class => ['-b', '-O3'],
     ],
 
     'timout' => 60,
