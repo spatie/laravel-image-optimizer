@@ -40,7 +40,7 @@ class OptimizerChainFactory
     {
         return collect($config['optimizers'])
             ->mapWithKeys(function (array $options, string $optimizerClass) {
-                if (!$optimizerClass instanceof Optimizer) {
+                if (! $optimizerClass instanceof Optimizer) {
                     throw InvalidConfiguration::notAnOptimizer($optimizerClass);
                 }
 
