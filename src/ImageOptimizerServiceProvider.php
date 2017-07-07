@@ -11,14 +11,12 @@ class ImageOptimizerServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/image-optimizer.php' => config_path('image-optimizer.php'),
+                __DIR__.'/../config/image-optimizer.php' => config_path('image-optimizer.php'),
             ], 'config');
         }
 
         $this->app(OptimizerChain::class, function () {
-
             return OptimizerChainFactory::create(config('laravel-optimizer'));
-
         });
 
         $this->app->singleton('image-optimizer', ResponseCache::class);
@@ -26,6 +24,6 @@ class ImageOptimizerServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/image-optimizer.php.php', 'image-optimizer');
+        $this->mergeConfigFrom(__DIR__.'/../config/image-optimizer.php.php', 'image-optimizer');
     }
 }
