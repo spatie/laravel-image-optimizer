@@ -16,19 +16,21 @@
         }
     ],
     "require": {
-        "php": "^7.1"
+        "php": "^7.1",
+        "spatie/image-optimizer": "^1.0.4"
     },
     "require-dev": {
+        "orchestra/testbench": "^3.4",
         "phpunit/phpunit": "^6.0"
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src"
+            "Spatie\\LaravelImageOptimizer\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Test\\": "tests"
+            "Spatie\\LaravelImageOptimizer\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -40,10 +42,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Spatie\\LaravelImageOptimizer\\LaravelImageOptimizerServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "LaravelImageOptimizer": "Spatie\\LaravelImageOptimizer\\LaravelImageOptimizerFacade"
             }
         }
     }

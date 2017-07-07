@@ -29,7 +29,7 @@ composer require spatie/laravel-image-optimizer
 ## Usage
 
 ``` php
-$skeleton = new Spatie\Skeleton();
+$skeleton = new Spatie\LaravelImageOptimizer();
 echo $skeleton->echoPhrase('Hello, Spatie!');
 ```
 
