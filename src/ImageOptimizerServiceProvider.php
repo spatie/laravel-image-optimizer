@@ -19,7 +19,7 @@ class ImageOptimizerServiceProvider extends ServiceProvider
             return OptimizerChainFactory::create(config('laravel-optimizer'));
         });
 
-        $this->app->singleton('image-optimizer', ResponseCache::class);
+        $this->app->singleton('image-optimizer', OptimizerChain::class);
     }
 
     public function register()
