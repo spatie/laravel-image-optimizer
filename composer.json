@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": "^7.1",
+        "php": "^7.0",
         "spatie/image-optimizer": "^1.0.4"
     },
     "require-dev": {
