@@ -8,7 +8,7 @@ use Spatie\ImageOptimizer\Optimizers\Jpegoptim;
 
 return [
     'optimizers' => [
-        Jpegoptim::class => ['--stip-all', '--all-progressive'],
+        Jpegoptim::class => ['--strip-all', '--all-progressive'],
         Pngquant::class => ['--force'],
         Optipng::class => ['-i0', '-o2', '-quiet'],
         Svgo::class => ['--disable=cleanupIDs'],
