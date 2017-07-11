@@ -25,6 +25,25 @@ class ConfigTest extends TestCase
     }
 
     /** @test */
+    public function it_can_log_to_the_default_log()
+    {
+        config()->set('image-optimizer.logOptimizerActivity', true);
+
+        $logWriter = new ArrayLogger();
+
+        $this->app->bind('log', function() use ($logWriter) {
+            return $logWriter;
+        });
+
+        app(OptimizerChain::class)->optimize(
+            $this->testImagePath('logo.png'),
+            $this->destinationPath('logo.png')
+        );
+
+        $this->assertContains('Start optimizing', $logWriter->getAllLinesAsString());
+    }
+
+    /** @test */
     public function it_will_throw_an_exception_with_a_malconfigured_optimizer()
     {
         config()->set('image-optimizer.optimizers', [stdClass::class => []]);
