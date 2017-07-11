@@ -9,7 +9,7 @@ class FacadeTest extends TestCase
     /** @test */
     public function it_has_a_facade()
     {
-        $testImagePath = $this->testImagePath('logo.png');
+        $testImagePath = $this->imagePath('logo.png');
 
         $destinationPath = $this->destinationPath('logo.png');
 

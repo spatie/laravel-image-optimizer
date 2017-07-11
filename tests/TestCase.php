@@ -46,17 +46,17 @@ abstract class TestCase extends OrchestraTestCase
         }
     }
 
-    public function testImagePath(string $path): string
+    protected function imagePath(string $path): string
     {
         return __DIR__ . "/testfiles/{$path}";
     }
 
-    public function destinationPath(string $path): string
+    protected function destinationPath(string $path): string
     {
         return __DIR__ . "/temp/{$path}";
     }
 
-    public function assertDecreasedFileSize(string $modifiedFilePath, string $originalFilePath)
+    protected function assertDecreasedFileSize(string $modifiedFilePath, string $originalFilePath)
     {
         $this->assertFileExists($originalFilePath);
 

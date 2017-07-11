@@ -36,7 +36,7 @@ class ImageOptimizerTest extends TestCase
         });
 
         app(OptimizerChain::class)->optimize(
-            $this->testImagePath('logo.png'),
+            $this->imagePath('logo.png'),
             $this->destinationPath('logo.png')
         );
 
