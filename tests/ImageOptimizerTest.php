@@ -6,7 +6,7 @@ use Spatie\ImageOptimizer\OptimizerChain;
 use Spatie\LaravelImageOptimizer\Exceptions\InvalidConfiguration;
 use stdClass;
 
-class ConfigTest extends TestCase
+class ImageOptimizerTest extends TestCase
 {
     /** @test */
     public function it_has_a_valid_default_configuration()
