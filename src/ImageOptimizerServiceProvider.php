@@ -15,8 +15,8 @@ class ImageOptimizerServiceProvider extends ServiceProvider
             ], 'config');
         }
 
-        $this->app(OptimizerChain::class, function () {
-            return OptimizerChainFactory::create(config('laravel-optimizer'));
+        $this->app->bind(OptimizerChain::class, function () {
+            return OptimizerChainFactory::create(config('image-optimizer'));
         });
 
         $this->app->singleton('image-optimizer', OptimizerChain::class);
@@ -24,6 +24,6 @@ class ImageOptimizerServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/image-optimizer.php.php', 'image-optimizer');
+        $this->mergeConfigFrom(__DIR__.'/../config/image-optimizer.php', 'image-optimizer');
     }
 }

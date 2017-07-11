@@ -13,7 +13,7 @@ class OptimizerChainFactory
     public static function create(array $config)
     {
         return (new OptimizerChain())
-            ->useLogger()
+            ->useLogger(static::getLogger($config))
             ->setTimeout($config['timeout'])
             ->setOptimizers(static::getOptimizers($config));
     }
@@ -41,11 +41,12 @@ class OptimizerChainFactory
     {
         return collect($config['optimizers'])
             ->mapWithKeys(function (array $options, string $optimizerClass) {
-                if (! $optimizerClass instanceof Optimizer) {
+                if (! is_a($optimizerClass, Optimizer::class, true)) {
                     throw InvalidConfiguration::notAnOptimizer($optimizerClass);
                 }
 
-                return (new $optimizerClass)->setOptions($options);
-            });
+                return [$optimizerClass => (new $optimizerClass)->setOptions($options)];
+            })
+            ->toArray();
     }
 }

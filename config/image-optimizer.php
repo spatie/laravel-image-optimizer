@@ -15,7 +15,7 @@ return [
         Gifsicle::class => ['-b', '-O3'],
     ],
 
-    'timout' => 60,
+    'timeout' => 60,
 
     'logOptimizerActivity' => false,
 ];
