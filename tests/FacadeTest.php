@@ -16,6 +16,5 @@ class FacadeTest extends TestCase
         ImageOptimizer::optimize($testImagePath, $destinationPath);
 
         $this->assertDecreasedFileSize($destinationPath, $testImagePath);
-
     }
 }

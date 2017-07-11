@@ -29,7 +29,7 @@ abstract class TestCase extends OrchestraTestCase
     protected function getPackageAliases($app)
     {
         return [
-            'ImageOptimizer' => ImageOptimizerFacade::class
+            'ImageOptimizer' => ImageOptimizerFacade::class,
         ];
     }
 
@@ -48,12 +48,12 @@ abstract class TestCase extends OrchestraTestCase
 
     protected function imagePath(string $path): string
     {
-        return __DIR__ . "/testfiles/{$path}";
+        return __DIR__."/testfiles/{$path}";
     }
 
     protected function destinationPath(string $path): string
     {
-        return __DIR__ . "/temp/{$path}";
+        return __DIR__."/temp/{$path}";
     }
 
     protected function assertDecreasedFileSize(string $modifiedFilePath, string $originalFilePath)
