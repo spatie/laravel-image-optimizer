@@ -2,9 +2,9 @@
 
 namespace Spatie\LaravelImageOptimizer\Test;
 
+use stdClass;
 use Spatie\ImageOptimizer\OptimizerChain;
 use Spatie\LaravelImageOptimizer\Exceptions\InvalidConfiguration;
-use stdClass;
 
 class ImageOptimizerTest extends TestCase
 {
@@ -31,7 +31,7 @@ class ImageOptimizerTest extends TestCase
 
         $logWriter = new ArrayLogger();
 
-        $this->app->bind('log', function() use ($logWriter) {
+        $this->app->bind('log', function () use ($logWriter) {
             return $logWriter;
         });
 
