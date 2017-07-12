@@ -170,10 +170,18 @@ app(Spatie\ImageOptimizer\OptimizerChain::class)->optimize($pathToImage);
 
 All images that in requests to routes that use the `optimizeImages`-middleware will be optimized automatically.
 
+```php
 Route::middleware('optimizeImages')->group(function () {
-    //all images will be optimized automatically
+    // all images will be optimized automatically
     Route::post('upload-images', 'UploadController@index);
 });
+```
+
+### Adding your own optimizers
+
+To learn how to create your own optimizer read [the "Writing custom optimizers" section](https://github.com/spatie/image-optimizer#writing-a-custom-optimizers) in the readme of the underlying [spatie/image-optimizer](https://github.com/spatie/image-optimizer#writing-a-custom-optimizers) package.
+
+You can add the fully qualified classname of your optimizer as a key in the `optimizers` array in the config file.
 
 ## Changelog
 
