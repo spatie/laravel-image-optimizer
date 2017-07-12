@@ -14,10 +14,10 @@ Here's how you can use it:
 ```php
 use ImageOptimizer;
 
-//the image will be replaced with an optimized version which should be smaller
+// the image will be replaced with an optimized version which should be smaller
 ImageOptimizer::optimize($pathToImage);
 
-//if you use a second parameter the package will not modify the original
+// if you use a second parameter the package will not modify the original
 ImageOptimizer::optimize($pathToImage, $pathToOptimizedImage);
 ```
 
@@ -141,10 +141,10 @@ protected $routeMiddleware = [
 You can resolve a configured instance of `Spatie\ImageOptimizer\OptimizerChain` out of the container:
 
 ```php
-//the image will be replaced with an optimized version which should be smaller
+// the image will be replaced with an optimized version which should be smaller
 app(Spatie\ImageOptimizer\OptimizerChain::class)->optimize($pathToImage);
 
-//if you use a second parameter the package will not modify the original
+// if you use a second parameter the package will not modify the original
 app(Spatie\ImageOptimizer\OptimizerChain::class)->optimize($pathToImage, $pathToOptimizedImage);
 ```
 
@@ -153,10 +153,10 @@ app(Spatie\ImageOptimizer\OptimizerChain::class)->optimize($pathToImage, $pathTo
 ```php
 use ImageOptimizer;
 
-//the image will be replaced with an optimized version which should be smaller
+// the image will be replaced with an optimized version which should be smaller
 ImageOptimizer::optimize($pathToImage);
 
-//if you use a second parameter the package will not modify the original
+// if you use a second parameter the package will not modify the original
 ImageOptimizer::optimize($pathToImage, $pathToOptimizedImage);
 ```
 
