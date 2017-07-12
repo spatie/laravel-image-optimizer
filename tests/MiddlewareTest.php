@@ -18,7 +18,6 @@ class MiddlewareTest extends TestCase
         copy($originalImagePath, $uploadPath);
 
         Route::middleware(OptimizeImages::class)->post('/', function () {
-
         });
 
         $this->call('POST', '/', [], [], ['upload' => $this->getUploadFile($uploadPath)]);
