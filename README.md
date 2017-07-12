@@ -9,12 +9,12 @@
 
 This package is the laravel specific integration of [spatie/image-optimizer](https://github.com/spatie/image-optimizer). It can optimize PNGs, JPGs, SVGs and GIFs by running them through a chain of various [image optimization tools](#optimization-tools). The package will automatically detect which optimization binaries are installed on your system and use them.
 
- Here's how you can use it:
+Here's how you can use it:
 
 ```php
 use ImageOptimizer;
 
-//the image will be replace with an optimized version which should be smaller
+//the image will be replaced with an optimized version which should be smaller
 ImageOptimizer::optimize($pathToImage);
 
 //if you use a second parameter the package will not modify the original
@@ -91,10 +91,42 @@ protected $routeMiddleware = [
 
 ## Usage
 
-``` php
-$skeleton = new Spatie\LaravelImageOptimizer();
-echo $skeleton->echoPhrase('Hello, Spatie!');
+You can resolve a configured instance of `Spatie\ImageOptimizer\OptimizerChain` out of the container:
+
+```php
+//the image will be replaced with an optimized version which should be smaller
+app(Spatie\ImageOptimizer\OptimizerChain::class)->optimize($pathToImage);
+
+//if you use a second parameter the package will not modify the original
+app(Spatie\ImageOptimizer\OptimizerChain::class)->optimize($pathToImage, $pathToOptimizedImage);
 ```
+
+### Using the facade
+
+```php
+use ImageOptimizer;
+
+//the image will be replaced with an optimized version which should be smaller
+ImageOptimizer::optimize($pathToImage);
+
+//if you use a second parameter the package will not modify the original
+ImageOptimizer::optimize($pathToImage, $pathToOptimizedImage);
+```
+
+You don't like facades you say? No problem! Just resolve a configured instance of `Spatie\ImageOptimizer\OptimizerChain` out of the container:
+
+```php
+app(Spatie\ImageOptimizer\OptimizerChain::class)->optimize($pathToImage);
+```
+
+### Using the middleware
+
+All images that in requests to routes that use the `optimizeImages`-middleware will be optimized automatically.
+
+Route::middleware('optimizeImages')->group(function () {
+    //all images will be optimized automatically
+    Route::post('upload-images', 'UploadController@index);
+});
 
 ## Changelog
 
