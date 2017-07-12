@@ -27,6 +27,8 @@ You don't like facades you say? No problem! Just resolve a configured instance o
 app(Spatie\ImageOptimizer\OptimizerChain::class)->optimize($pathToImage);
 ```
 
+The package also contains [a middleware](TO DO: add link) to automatically all files in an request.
+
 Don't use Laravel you say? No problem! Just use the underlying [spatie/image-optimizer](https://github.com/spatie/image-optimizer) directly.
 
 ## Postcardware
@@ -53,7 +55,7 @@ composer require spatie/laravel-image-optimizer
 ];
 ```
 
-The package uses a bunch of binaries to optimize images. To learn which ones on how to install them, head over to the [optimization tools section](https://github.com/spatie/image-optimizer#optimization-tools) in the readme of the underlying image-optimizer package.
+The package uses a bunch of binaries to optimize images. To learn which ones on how to install them, head over to the [optimization tools section](https://github.com/spatie/image-optimizer#optimization-tools) in the readme of the underlying image-optimizer package. That readme also contains info on [what these tools will do to your images](https://github.com/spatie/image-optimizer#which-tools-will-do-what).
 
 If you want to make use of the facade you must install it as well:
 
@@ -75,6 +77,16 @@ This is the contents of the `config/image-optimizer` file that will be published
 
 ```php
 TODO: add config file contents
+```
+
+If you want to automatically optimize images that get uploaded to your application add the `\Spatie\LaravelImageOptimizer\Middlewares\OptimizeImages::class` in the http kernel. 
+
+```php
+// app/Http/Kernel.php
+protected $routeMiddleware = [
+   ...
+   'optimizeImages' => \Spatie\LaravelImageOptimizer\Middlewares\OptimizeImages::class,
+];
 ```
 
 ## Usage
