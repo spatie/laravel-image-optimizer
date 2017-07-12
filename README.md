@@ -9,7 +9,27 @@
 [![StyleCI](https://styleci.io/repos/96563589/shield?branch=master)](https://styleci.io/repos/96563589)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-image-optimizer.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-image-optimizer)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+This package is the laravel specific integration of [spatie/image-optimizer](https://github.com/spatie/image-optimizer). It can optimize PNGs, JPGs, SVGs and GIFs by running them through a chain of various [image optimization tools](#optimization-tools). The package will automatically detect which optimization binaries are installed on your system and use them.
+
+ Here's how you can use it:
+
+```php
+use ImageOptimizer;
+
+//the image will be replace with an optimized version which should be smaller
+ImageOptimizer::optimize($pathToImage);
+
+//if you use a second parameter the package will not modify the original
+ImageOptimizer::optimize($pathToImage, $pathToOptimizedImage);
+```
+
+You don't like facades you say? No problem! Just resolve a configured instance of `Spatie\ImageOptimizer\OptimizerChain` out of the container:
+
+```php
+app(Spatie\ImageOptimizer\OptimizerChain::class)->optimize($pathToImage);
+```
+
+Don't use Laravel you say? No problem! Just use the underlying [spatie/image-optimizer](https://github.com/spatie/image-optimizer) directly.
 
 ## Postcardware
 
