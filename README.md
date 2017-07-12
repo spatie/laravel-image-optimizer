@@ -183,7 +183,7 @@ To learn how to create your own optimizer read [the "Writing custom optimizers" 
 
 You can add the fully qualified classname of your optimizer as a key in the `optimizers` array in the config file.
 
-## Example conversion
+## Example conversions
 
 Here are some [example conversions](https://github.com/spatie/image-optimizer#example-conversions) that were made by the optimizer.
 
