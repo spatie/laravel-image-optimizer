@@ -20,7 +20,7 @@ class OptimizerChainFactory
 
     protected static function getLogger($config): LoggerInterface
     {
-        $configuredLogger = $config['logOptimizerActivity'];
+        $configuredLogger = $config['log_optimizer_activity'];
 
         if ($configuredLogger === true) {
             return app('log');

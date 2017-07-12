@@ -17,7 +17,7 @@ class ImageOptimizerTest extends TestCase
     /** @test */
     public function it_will_throw_an_exception_with_a_malconfigured_logger()
     {
-        config()->set('image-optimizer.logOptimizerActivity', stdClass::class);
+        config()->set('image-optimizer.log_optimizer_activity', stdClass::class);
 
         $this->expectException(InvalidConfiguration::class);
 
@@ -27,7 +27,7 @@ class ImageOptimizerTest extends TestCase
     /** @test */
     public function it_can_log_to_the_default_log()
     {
-        config()->set('image-optimizer.logOptimizerActivity', true);
+        config()->set('image-optimizer.log_optimizer_activity', true);
 
         $logWriter = new ArrayLogger();
 
