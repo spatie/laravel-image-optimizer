@@ -1,5 +1,3 @@
-**WORK IN PROGRESS DO NOT USE YET**
-
 # Optimize images in your Laravel app
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-image-optimizer.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-image-optimizer)
@@ -45,6 +43,36 @@ You can install the package via composer:
 
 ```bash
 composer require spatie/laravel-image-optimizer
+```
+
+```php
+// config/app.php
+'providers' => [
+    ...
+    Spatie\LaravelImageOptimizer\ImageOptimizerServiceProvider::class,
+];
+```
+
+If you want to make use of the facade you must install it as well:
+
+```php
+// config/app.php
+'aliases' => [
+    ...
+    'ImageOptimizer' => Spatie\LaravelImageOptimizer\ImageOptimizerFacade::class,
+];
+```
+
+The package comes with some sane defaults to optimize images. If can modify that configuration by publishing the config file.  
+
+```bash
+php artisan vendor:publish --provider="Spatie\LaravelImageOptimizer\ImageOptimizerServiceProvider"
+```
+
+This is the contents of the `config/image-optimizer` file that will be published:
+
+```php
+TODO: add config file contents
 ```
 
 ## Usage
