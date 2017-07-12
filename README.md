@@ -53,6 +53,8 @@ composer require spatie/laravel-image-optimizer
 ];
 ```
 
+The package uses a bunch of binaries to optimize images. To learn which ones on how to install them, head over to the [optimization tools section](https://github.com/spatie/image-optimizer#optimization-tools) in the readme of the underlying image-optimizer package.
+
 If you want to make use of the facade you must install it as well:
 
 ```php
