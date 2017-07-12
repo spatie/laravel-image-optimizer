@@ -4,6 +4,7 @@ namespace Spatie\LaravelImageOptimizer\Middlewares;
 
 use Closure;
 use Spatie\ImageOptimizer\OptimizerChain;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class OptimizeImages
 {
@@ -11,8 +12,8 @@ class OptimizeImages
     {
         $optimizerChain = app(OptimizerChain::class);
 
-        collect($request->allFiles())->each(function ($file) use ($optimizerChain) {
-            $optimizerChain->optimize($file);
+        collect($request->allFiles())->each(function (UploadedFile $file) use ($optimizerChain) {
+            $optimizerChain->optimize($file->getPathname());
         });
 
         return $next($request);

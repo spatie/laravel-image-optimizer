@@ -36,8 +36,8 @@ class ImageOptimizerTest extends TestCase
         });
 
         app(OptimizerChain::class)->optimize(
-            $this->imagePath('logo.png'),
-            $this->destinationPath('logo.png')
+            $this->getImagePath('logo.png'),
+            $this->getTempPath('logo.png')
         );
 
         $this->assertContains('Start optimizing', $logWriter->getAllLinesAsString());

@@ -46,12 +46,12 @@ abstract class TestCase extends OrchestraTestCase
         }
     }
 
-    protected function imagePath(string $path): string
+    protected function getImagePath(string $path): string
     {
         return __DIR__."/testfiles/{$path}";
     }
 
-    protected function destinationPath(string $path): string
+    protected function getTempPath(string $path): string
     {
         return __DIR__."/temp/{$path}";
     }

@@ -9,9 +9,9 @@ class FacadeTest extends TestCase
     /** @test */
     public function it_has_a_facade()
     {
-        $testImagePath = $this->imagePath('logo.png');
+        $testImagePath = $this->getImagePath('logo.png');
 
-        $destinationPath = $this->destinationPath('logo.png');
+        $destinationPath = $this->getTempPath('logo.png');
 
         ImageOptimizer::optimize($testImagePath, $destinationPath);
 
