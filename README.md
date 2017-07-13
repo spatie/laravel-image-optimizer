@@ -27,7 +27,7 @@ You don't like facades you say? No problem! Just resolve a configured instance o
 app(Spatie\ImageOptimizer\OptimizerChain::class)->optimize($pathToImage);
 ```
 
-The package also contains [a middleware](https://github.com/spatie/laravel-image-optimizer/blob/master/README.md#using-the-middleware) to automatically optimizer all images in an request.
+The package also contains [a middleware](https://github.com/spatie/laravel-image-optimizer/blob/master/README.md#using-the-middleware) to automatically optimize all images in an request.
 
 Don't use Laravel you say? No problem! Just use the underlying [spatie/image-optimizer](https://github.com/spatie/image-optimizer) directly.
 
