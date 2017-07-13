@@ -27,6 +27,7 @@ return [
             '-o2',  // this set the optimization level to two (multiple IDAT compression trials)
             '-quiet', // required parameter for this package
         ],
+        
         Svgo::class => [
             '--disable=cleanupIDs', // disabling because it is know to cause troubles
         ],
