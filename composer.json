@@ -42,10 +42,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\LaravelImageOptimizer\\LaravelImageOptimizerServiceProvider"
+                "Spatie\\LaravelImageOptimizer\\ImageOptimizerServiceProvider"
             ],
             "aliases": {
-                "LaravelImageOptimizer": "Spatie\\LaravelImageOptimizer\\LaravelImageOptimizerFacade"
+                "LaravelImageOptimizer": "Spatie\\LaravelImageOptimizer\\ImageOptimizerFacade"
             }
         }
     }
