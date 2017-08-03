@@ -20,8 +20,8 @@
         "spatie/image-optimizer": "^1.0.4"
     },
     "require-dev": {
-        "orchestra/testbench": "^3.4",
-        "phpunit/phpunit": "^5.7"
+        "orchestra/testbench": "^3.4|~3.5.x-dev|~3.5.x-dev",
+        "phpunit/phpunit": "^6.2"
     },
     "autoload": {
         "psr-4": {
@@ -50,3 +50,4 @@
         }
     }
 }
+
