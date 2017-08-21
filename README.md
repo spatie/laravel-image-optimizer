@@ -63,7 +63,7 @@ If you want to make use of the facade you must install it as well:
 // config/app.php
 'aliases' => [
     ...
-    'ImageOptimizer' => Spatie\LaravelImageOptimizer\ImageOptimizerFacade::class,
+    'ImageOptimizer' => Spatie\LaravelImageOptimizer\Facades\ImageOptimizer::class,
 ];
 ```
 

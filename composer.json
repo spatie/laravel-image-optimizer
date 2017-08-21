@@ -46,7 +46,7 @@
                 "Spatie\\LaravelImageOptimizer\\ImageOptimizerServiceProvider"
             ],
             "aliases": {
-                "ImageOptimizer": "Spatie\\LaravelImageOptimizer\\ImageOptimizerFacade"
+                "ImageOptimizer": "Spatie\\LaravelImageOptimizer\\Facades\\ImageOptimizer"
             }
         }
     },
