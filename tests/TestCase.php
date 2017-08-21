@@ -3,7 +3,6 @@
 namespace Spatie\LaravelImageOptimizer\Test;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use Spatie\LaravelImageOptimizer\ImageOptimizerFacade;
 use Spatie\LaravelImageOptimizer\ImageOptimizerServiceProvider;
 
 abstract class TestCase extends OrchestraTestCase
