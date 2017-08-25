@@ -7,7 +7,7 @@
 [![StyleCI](https://styleci.io/repos/96563589/shield?branch=master)](https://styleci.io/repos/96563589)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-image-optimizer.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-image-optimizer)
 
-This package is the laravel specific integration of [spatie/image-optimizer](https://github.com/spatie/image-optimizer). It can optimize PNGs, JPGs, SVGs and GIFs by running them through a chain of various [image optimization tools](#optimization-tools). The package will automatically detect which optimization binaries are installed on your system and use them.
+This package is the Laravel 5.4 specific integration of [spatie/image-optimizer](https://github.com/spatie/image-optimizer). It can optimize PNGs, JPGs, SVGs and GIFs by running them through a chain of various [image optimization tools](#optimization-tools). The package will automatically detect which optimization binaries are installed on your system and use them.
 
 Here's how you can use it:
 
