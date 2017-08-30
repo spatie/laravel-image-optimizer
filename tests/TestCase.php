@@ -29,7 +29,7 @@ abstract class TestCase extends OrchestraTestCase
     protected function getPackageAliases($app)
     {
         return [
-            'ImageOptimizer' => ImageOptimizerFacade::class,
+            'ImageOptimizer' => \Spatie\LaravelImageOptimizer\Facades\ImageOptimizer::class,
         ];
     }
 

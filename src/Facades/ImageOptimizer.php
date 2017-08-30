@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\LaravelImageOptimizer;
+namespace Spatie\LaravelImageOptimizer\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class ImageOptimizerFacade extends Facade
+class ImageOptimizer extends Facade
 {
     protected static function getFacadeAccessor()
     {

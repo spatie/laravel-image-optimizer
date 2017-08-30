@@ -47,25 +47,9 @@ You can install the package via composer:
 composer require spatie/laravel-image-optimizer
 ```
 
-```php
-// config/app.php
-'providers' => [
-    ...
-    Spatie\LaravelImageOptimizer\ImageOptimizerServiceProvider::class,
-];
-```
+The package will automatically register itself.
 
 The package uses a bunch of binaries to optimize images. To learn which ones on how to install them, head over to the [optimization tools section](https://github.com/spatie/image-optimizer#optimization-tools) in the readme of the underlying image-optimizer package. That readme also contains info on [what these tools will do to your images](https://github.com/spatie/image-optimizer#which-tools-will-do-what).
-
-If you want to make use of the facade you must install it as well:
-
-```php
-// config/app.php
-'aliases' => [
-    ...
-    'ImageOptimizer' => Spatie\LaravelImageOptimizer\ImageOptimizerFacade::class,
-];
-```
 
 The package comes with some sane defaults to optimize images. If can modify that configuration by publishing the config file.  
 
