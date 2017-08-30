@@ -2,10 +2,9 @@
 
 All notable changes to `laravel-image-optimizer` will be documented in this file
 
-## unreleased in current version
+## 1.1.0
 
 - add support for Laravel 5.5
-
 
 ## 1.0.1 - 2017-07-22
 

@@ -17,12 +17,12 @@
     ],
     "require": {
         "php": "^7.0",
-        "illuminate/support": "^5.4.20|5.5.x-dev",
+        "illuminate/support": "^5.4.20|~5.5.0",
         "spatie/image-optimizer": "^1.0.4"
     },
     "require-dev": {
-        "orchestra/testbench": "^3.4|3.5.x-dev",
-        "phpunit/phpunit": "^5.7|^6.2"
+        "orchestra/testbench": "^3.4|~3.5.0",
+        "phpunit/phpunit": "^6.2"
     },
     "autoload": {
         "psr-4": {
@@ -49,6 +49,5 @@
                 "ImageOptimizer": "Spatie\\LaravelImageOptimizer\\Facades\\ImageOptimizer"
             }
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
