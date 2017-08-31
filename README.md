@@ -158,7 +158,7 @@ All images that in requests to routes that use the `optimizeImages`-middleware w
 ```php
 Route::middleware('optimizeImages')->group(function () {
     // all images will be optimized automatically
-    Route::post('upload-images', 'UploadController@index);
+    Route::post('upload-images', 'UploadController@index');
 });
 ```
 
