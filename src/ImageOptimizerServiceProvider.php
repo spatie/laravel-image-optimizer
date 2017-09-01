@@ -25,5 +25,7 @@ class ImageOptimizerServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(__DIR__.'/../config/image-optimizer.php', 'image-optimizer');
+
+        $this->app['router']->aliasMiddleware('optimizeImages', \Spatie\LaravelImageOptimizer\Middlewares\OptimizeImages::class);
     }
 }
