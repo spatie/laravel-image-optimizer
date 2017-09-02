@@ -12,14 +12,8 @@ class OptimizeImages
     {
         $optimizerChain = app(OptimizerChain::class);
 
-        collect($request->allFiles())->each(function ($file) use ($optimizerChain) {
-            if (is_array($file)) {
-                collect($file)->each(function (UploadedFile $one) use ($optimizerChain) {
-                    $optimizerChain->optimize($one->getPathname());
-                });
-            } else {
-                $optimizerChain->optimize($file->getPathname());
-            }
+        collect(array_flatten($request->allFiles()))->each(function (UploadedFile $file) use ($optimizerChain) {
+            $optimizerChain->optimize($file->getPathname());
         });
 
         return $next($request);
