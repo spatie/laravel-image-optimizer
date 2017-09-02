@@ -51,7 +51,7 @@ The package will automatically register itself.
 
 The package uses a bunch of binaries to optimize images. To learn which ones on how to install them, head over to the [optimization tools section](https://github.com/spatie/image-optimizer#optimization-tools) in the readme of the underlying image-optimizer package. That readme also contains info on [what these tools will do to your images](https://github.com/spatie/image-optimizer#which-tools-will-do-what).
 
-The package comes with some sane defaults to optimize images. If can modify that configuration by publishing the config file.  
+The package comes with some sane defaults to optimize images. You can modify that configuration by publishing the config file.
 
 ```bash
 php artisan vendor:publish --provider="Spatie\LaravelImageOptimizer\ImageOptimizerServiceProvider"
