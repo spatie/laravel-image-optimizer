@@ -53,7 +53,6 @@ The package uses a bunch of binaries to optimize images. To learn which ones on 
 
 The package comes with some sane defaults to optimize images. You can modify that configuration by publishing the config file.
 
-
 ```bash
 php artisan vendor:publish --provider="Spatie\LaravelImageOptimizer\ImageOptimizerServiceProvider"
 ```
@@ -109,6 +108,16 @@ return [
      * You can also set this to a class that implements `Psr\Log\LoggerInterface`.
      */
     'log_optimizer_activity' => false,
+];
+```
+
+If you want to automatically optimize images that get uploaded to your application add the `\Spatie\LaravelImageOptimizer\Middlewares\OptimizeImages::class` in the http kernel.
+
+```php
+// app/Http/Kernel.php
+protected $routeMiddleware = [
+   ...
+   'optimizeImages' => \Spatie\LaravelImageOptimizer\Middlewares\OptimizeImages::class,
 ];
 ```
 
