@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-image-optimizer` will be documented in this file
 
+## 1.1.2 - 2017-12-11
+- fix issue with middleware and images in multidimensional input arrays
+- fix issue where jpegs would not be optimized correctly
+
 ## 1.1.1
 - fix for multipe file uploads
 
