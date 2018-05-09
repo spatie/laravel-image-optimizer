@@ -1,11 +1,11 @@
 {
-    "name": "spatie/laravel-image-optimizer",
+    "name": "fatonsopa/laravel-image-optimizer",
     "description": "Optimize images in your Laravel app",
     "keywords": [
         "spatie",
         "laravel-image-optimizer"
     ],
-    "homepage": "https://github.com/spatie/laravel-image-optimizer",
+    "homepage": "https://github.com/fatonsopa/laravel-image-optimizer",
     "license": "MIT",
     "authors": [
         {
