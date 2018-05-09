@@ -47,13 +47,28 @@ class OptimizerChainFactory
 
               // Initialize optimizer class
               $newOptimizerClass = new $optimizerClass();
-              if(isset($config['binary_path']) && $config['binary_path']) {
-                  $newOptimizerClass->setBinaryPath($config['binary_path']);
+
+              if(self::binaryPath($config)){
+                  $newOptimizerClass->setBinaryPath(self::binaryPath($config));
               }
+
               $newOptimizerClass->setOptions($options);
 
               return [$optimizerClass => $newOptimizerClass];
           })
           ->toArray();
+    }
+
+    /**
+     * Chek whether binary path has been defined in config
+     *
+     * @param array $config
+     * @return string
+     */
+    public function binaryPath($config){
+        if(isset($config['binary_path']) && $config['binary_path']) {
+            return $config['binary_path'];
+        }
+        return '';
     }
 }
