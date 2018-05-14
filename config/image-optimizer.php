@@ -40,8 +40,8 @@ return [
     ],
 
     /*
-    * Base path to execute commands from
-    * Useful in case your commands are not accessible by global environment. ex. /usr/bin/local
+    * The directory where your binaries are stored.
+    * Only use this when you binaries are not accessible in the global environment.
     */
     'binary_path' => '',
 
