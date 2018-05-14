@@ -40,7 +40,7 @@ class OptimizerChainFactory
     protected static function getOptimizers(array $config)
     {
         return collect($config['optimizers'])
-          ->mapWithKeys(function (array $options, string $optimizerClass) use($config) {
+          ->mapWithKeys(function (array $options, string $optimizerClass) use ($config) {
               if (! is_a($optimizerClass, Optimizer::class, true)) {
                   throw InvalidConfiguration::notAnOptimizer($optimizerClass);
               }
@@ -48,7 +48,7 @@ class OptimizerChainFactory
               // Initialize optimizer class
               $newOptimizerClass = new $optimizerClass();
 
-              if(static::getBinaryPath($config)){
+              if (static::getBinaryPath($config)) {
                   $newOptimizerClass->setBinaryPath(self::getBinaryPath($config));
               }
 
@@ -59,8 +59,8 @@ class OptimizerChainFactory
           ->toArray();
     }
 
-
-    public static function getBinaryPath(array $config): string {
+    public static function getBinaryPath(array $config): string
+    {
         return $config['binary_path'] ?? '';
     }
 }
