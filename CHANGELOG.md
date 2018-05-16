@@ -2,6 +2,9 @@
 
 All notable changes to `laravel-image-optimizer` will be documented in this file
 
+## 1.2.0 - 2018-05-16
+- add `binary_path` to config file
+
 ## 1.1.3 - 2018-02-08
 - add support for L5.6
 - drop support for L5.4
