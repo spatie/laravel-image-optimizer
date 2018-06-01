@@ -4,8 +4,8 @@ namespace Spatie\LaravelImageOptimizer;
 
 use Illuminate\Support\ServiceProvider;
 use Spatie\ImageOptimizer\OptimizerChain;
-use Illuminate\Foundation\Application as LaravelApplication;
 use Laravel\Lumen\Application as LumenApplication;
+use Illuminate\Foundation\Application as LaravelApplication;
 
 class ImageOptimizerServiceProvider extends ServiceProvider
 {
