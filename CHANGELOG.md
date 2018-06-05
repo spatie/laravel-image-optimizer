@@ -2,6 +2,9 @@
 
 All notable changes to `laravel-image-optimizer` will be documented in this file
 
+## 1.3.0 - 2018-06-05
+- add compatibility with Lumen
+
 ## 1.2.0 - 2018-05-16
 - add `binary_path` to config file
 

@@ -21,7 +21,9 @@ class ImageOptimizerServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__.'/../config/image-optimizer.php' => config_path('image-optimizer.php'),
             ], 'config');
-        } elseif ($this->app instanceof LumenApplication) {
+        }
+
+        if ($this->app instanceof LumenApplication) {
             $this->app->configure('image-optimizer');
         }
 
