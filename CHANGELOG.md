@@ -2,6 +2,9 @@
 
 All notable changes to `laravel-image-optimizer` will be documented in this file
 
+## 1.3.1 - 2018-06-05
+- make sure a compatible version of spatie/image-optimizer is being pulled in
+
 ## 1.3.0 - 2018-06-05
 - add compatibility with Lumen
 
