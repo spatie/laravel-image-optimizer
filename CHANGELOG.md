@@ -2,6 +2,9 @@
 
 All notable changes to `laravel-image-optimizer` will be documented in this file
 
+## 1.3.2 - 2018-08-27
+- add support for Laravel 5.7
+
 ## 1.3.1 - 2018-06-05
 - make sure a compatible version of spatie/image-optimizer is being pulled in
 
