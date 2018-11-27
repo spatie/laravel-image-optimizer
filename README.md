@@ -2,7 +2,6 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-image-optimizer.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-image-optimizer)
 [![Build Status](https://img.shields.io/travis/spatie/laravel-image-optimizer/master.svg?style=flat-square)](https://travis-ci.org/spatie/laravel-image-optimizer)
-[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/99e8ebe7-8c77-44e9-b5c3-a4c5f73b2c30.svg?style=flat-square)](https://insight.sensiolabs.com/projects/99e8ebe7-8c77-44e9-b5c3-a4c5f73b2c30)
 [![StyleCI](https://styleci.io/repos/96563589/shield?branch=master)](https://styleci.io/repos/96563589)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-image-optimizer.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-image-optimizer)
 
