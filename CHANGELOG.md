@@ -2,9 +2,13 @@
 
 All notable changes to `laravel-image-optimizer` will be documented in this file
 
-## 1.3.3 - 2019-02-27
+## 1.4.0 - 2019-02-27
 
 - drop support for PHP 7.1
+
+## 1.3.3 - 2019-02-27
+
+- drop support for PHP 7.0
 - add support for Laravel 5.8
 
 ## 1.3.2 - 2018-08-27
