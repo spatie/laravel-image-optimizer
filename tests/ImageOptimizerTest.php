@@ -40,7 +40,7 @@ class ImageOptimizerTest extends TestCase
             $this->getTempPath('logo.png')
         );
 
-        $this->assertContains('Start optimizing', $logWriter->getAllLinesAsString());
+        $this->assertStringContainsString('Start optimizing', $logWriter->getAllLinesAsString());
     }
 
     /** @test */
