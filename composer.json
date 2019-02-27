@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": "^7.0",
-        "laravel/framework": "~5.5.0|~5.6.0|~5.7.0",
+        "laravel/framework": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
         "spatie/image-optimizer": "^1.1.0"
     },
     "require-dev": {
