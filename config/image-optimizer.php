@@ -7,7 +7,6 @@ use Spatie\ImageOptimizer\Optimizers\Gifsicle;
 use Spatie\ImageOptimizer\Optimizers\Pngquant;
 use Spatie\ImageOptimizer\Optimizers\Jpegoptim;
 
-
 return [
     /*
      * When calling `optimize` the package will automatically determine which optimizers
