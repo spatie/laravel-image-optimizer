@@ -1,6 +1,9 @@
 # Changelog
 
 All notable changes to `laravel-image-optimizer` will be documented in this file
+## 1.5.0 - 2019-09-04
+
+- add support for Laravel 6
 
 ## 1.4.0 - 2019-02-27
 
