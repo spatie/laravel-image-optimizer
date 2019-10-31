@@ -15,7 +15,9 @@ class OptimizeImages
         collect($request->allFiles())
             ->flatten()
             ->each(function (UploadedFile $file) use ($optimizerChain) {
-                $optimizerChain->optimize($file->getPathname());
+                if ($file->isValid()) {
+                    $optimizerChain->optimize($file->getPathname());
+                }
             });
 
         return $next($request);
