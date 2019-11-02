@@ -65,7 +65,9 @@ class MiddlewareTest extends TestCase
             $path,
             pathinfo($path, PATHINFO_BASENAME),
             mime_content_type($path),
-            filesize($path)
+            filesize($path),
+            null,
+            true
         );
     }
 }
