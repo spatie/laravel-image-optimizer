@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-image-optimizer` will be documented in this file
 
+## 1.5.1 - 2019-11-02
+
+- only optimize files that were uploaded without errors (#75)
+
 ## 1.5.0 - 2019-09-04
 
 - make compatible with Laravel 6
