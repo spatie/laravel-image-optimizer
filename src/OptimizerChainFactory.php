@@ -3,8 +3,8 @@
 namespace Spatie\LaravelImageOptimizer;
 
 use Psr\Log\LoggerInterface;
-use Spatie\ImageOptimizer\Optimizer;
 use Spatie\ImageOptimizer\DummyLogger;
+use Spatie\ImageOptimizer\Optimizer;
 use Spatie\ImageOptimizer\OptimizerChain;
 use Spatie\LaravelImageOptimizer\Exceptions\InvalidConfiguration;
 
