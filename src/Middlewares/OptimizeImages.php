@@ -18,6 +18,7 @@ class OptimizeImages
                 if (app()->environment('testing')) {
                     return true;
                 }
+
                 return $file->isValid();
             })
             ->each(function (UploadedFile $file) use ($optimizerChain) {
