@@ -17,11 +17,11 @@
     ],
     "require": {
         "php": "^7.2",
-        "laravel/framework": "~5.7.0|~5.8.0|^6.0",
+        "laravel/framework": "^7.0",
+        "orchestra/testbench": "^5.0",
         "spatie/image-optimizer": "^1.2.0"
     },
     "require-dev": {
-        "orchestra/testbench": "~3.7.0|~3.8.0|^4.0",
         "phpunit/phpunit": "^8.0"
     },
     "autoload": {
@@ -49,5 +49,7 @@
                 "ImageOptimizer": "Spatie\\LaravelImageOptimizer\\Facades\\ImageOptimizer"
             }
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
