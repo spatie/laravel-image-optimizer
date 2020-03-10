@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-image-optimizer` will be documented in this file
 
+## 1.6.1 - 2020-03-10
+
+- fix deps
+
 ## 1.6.0 - 2020-03-02
 
 - add support for L7
