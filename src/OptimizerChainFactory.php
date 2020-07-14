@@ -30,7 +30,7 @@ class OptimizerChainFactory
             return new DummyLogger();
         }
 
-        if (! $configuredLogger instanceof LoggerInterface) {
+        if (! is_a($configuredLogger, LoggerInterface::class, true)) {
             throw InvalidConfiguration::notAnLogger($configuredLogger);
         }
 
