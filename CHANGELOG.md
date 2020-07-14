@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-image-optimizer` will be documented in this file
 
+## 1.6.2 - 2020-07-14
+
+- bugfix for custom logger (#87)
+
 ## 1.6.1 - 2020-03-10
 
 - fix deps
