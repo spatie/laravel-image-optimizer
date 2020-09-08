@@ -30,7 +30,7 @@ class OptimizerChainFactory
             return new DummyLogger();
         }
 
-        if (!is_a($configuredLogger, LoggerInterface::class, true)) {
+        if (! is_a($configuredLogger, LoggerInterface::class, true)) {
             throw InvalidConfiguration::notAnLogger($configuredLogger);
         }
 
@@ -41,7 +41,7 @@ class OptimizerChainFactory
     {
         return collect($config['optimizers'])
           ->mapWithKeys(function (array $options, string $optimizerClass) use ($config) {
-              if (!is_a($optimizerClass, Optimizer::class, true)) {
+              if (! is_a($optimizerClass, Optimizer::class, true)) {
                   throw InvalidConfiguration::notAnOptimizer($optimizerClass);
               }
 

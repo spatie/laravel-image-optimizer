@@ -46,8 +46,8 @@ class MiddlewareTest extends TestCase
 
         $this->call('POST', '/', [], [], [
             'upload' => $this->getUploadFile($uploadPath1),
-            'one'    => [
-                'two'   => $this->getUploadFile($uploadPath2),
+            'one' => [
+                'two' => $this->getUploadFile($uploadPath2),
                 'three' => [
                     'four' => $this->getUploadFile($uploadPath3),
                 ],
