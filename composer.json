@@ -17,13 +17,13 @@
     ],
     "require": {
         "php": "^7.2",
-        "laravel/framework": "^6.0|^7.0",
+        "laravel/framework": "^6.0|^7.0|^8.0",
         "spatie/image-optimizer": "^1.2.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
-        "orchestra/testbench": "^4.0|^5.0",
-        "phpunit/phpunit": "^8.0"
+        "orchestra/testbench": "^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "psr-4": {
