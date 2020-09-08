@@ -23,6 +23,7 @@ abstract class TestCase extends OrchestraTestCase
 
     /**
      * @param \Illuminate\Foundation\Application $app
+     *
      * @return array
      */
     protected function getPackageAliases($app)
@@ -39,7 +40,7 @@ abstract class TestCase extends OrchestraTestCase
         $files = scandir($tempDirPath);
 
         foreach ($files as $file) {
-            if (! in_array($file, ['.', '..', '.gitignore'])) {
+            if (!in_array($file, ['.', '..', '.gitignore'])) {
                 unlink("{$tempDirPath}/{$file}");
             }
         }
@@ -65,7 +66,8 @@ abstract class TestCase extends OrchestraTestCase
 
         $modifiedFileSize = filesize($modifiedFilePath);
 
-        $this->assertTrue($modifiedFileSize < $originalFileSize,
+        $this->assertTrue(
+            $modifiedFileSize < $originalFileSize,
             "File {$modifiedFilePath} as size {$modifiedFileSize} which is not less than {$originalFileSize}"
         );
 
