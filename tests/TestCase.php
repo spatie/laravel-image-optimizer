@@ -65,7 +65,8 @@ abstract class TestCase extends OrchestraTestCase
 
         $modifiedFileSize = filesize($modifiedFilePath);
 
-        $this->assertTrue($modifiedFileSize < $originalFileSize,
+        $this->assertTrue(
+            $modifiedFileSize < $originalFileSize,
             "File {$modifiedFilePath} as size {$modifiedFileSize} which is not less than {$originalFileSize}"
         );
 
