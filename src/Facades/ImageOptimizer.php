@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Storage;
 
 class ImageOptimizer extends Facade
 {
-    private static string $storageDisk = "local";
+    private static $storageDisk = "local";
 
     protected static function getFacadeAccessor()
     {
