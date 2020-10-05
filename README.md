@@ -153,6 +153,15 @@ ImageOptimizer::optimize($pathToImage);
 ImageOptimizer::optimize($pathToImage, $pathToOptimizedImage);
 ```
 
+#### Set Storage disk
+
+```php
+use ImageOptimizer;
+
+// the image will be replaced with an optimized version which should be smaller
+ImageOptimizer::disk('photos')->optimize($pathToImageFromPhotoDisk);
+```
+
 You don't like facades you say? No problem! Just resolve a configured instance of `Spatie\ImageOptimizer\OptimizerChain` out of the container:
 
 ```php
