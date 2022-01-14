@@ -34,7 +34,7 @@ class OptimizerChainFactory
             throw InvalidConfiguration::notAnLogger($configuredLogger);
         }
 
-        return new $configuredLogger;
+        return new $configuredLogger();
     }
 
     protected static function getOptimizers(array $config)
