@@ -21,7 +21,7 @@ jobs:
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }} - ${{ matrix.os }}
 
     steps:
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
            node-version: 10
       - name: Install tools
