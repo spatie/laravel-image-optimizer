@@ -17,11 +17,11 @@
     ],
     "require": {
         "php": "^8.0",
-        "laravel/framework": "^8.0|^9.0",
+        "laravel/framework": "^8.0|^9.0|^10.0",
         "spatie/image-optimizer": "^1.2.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^6.23|^7.0",
+        "orchestra/testbench": "^6.23|^7.0|^8.0",
         "phpunit/phpunit": "^9.4"
     },
     "autoload": {
