@@ -2,6 +2,24 @@
 
 All notable changes to `laravel-image-optimizer` will be documented in this file
 
+## 1.7.1 - 2023-01-24
+
+### What's Changed
+
+- Add Dependabot Automation by @patinthehat in https://github.com/spatie/laravel-image-optimizer/pull/108
+- Bump actions/setup-node from 1 to 3 by @dependabot in https://github.com/spatie/laravel-image-optimizer/pull/109
+- Add PHP 8.2 Support by @patinthehat in https://github.com/spatie/laravel-image-optimizer/pull/110
+- Bump actions/checkout from 2 to 3 by @dependabot in https://github.com/spatie/laravel-image-optimizer/pull/111
+- Laravel 10.x Compatibility by @laravel-shift in https://github.com/spatie/laravel-image-optimizer/pull/112
+
+### New Contributors
+
+- @patinthehat made their first contribution in https://github.com/spatie/laravel-image-optimizer/pull/108
+- @dependabot made their first contribution in https://github.com/spatie/laravel-image-optimizer/pull/109
+- @laravel-shift made their first contribution in https://github.com/spatie/laravel-image-optimizer/pull/112
+
+**Full Changelog**: https://github.com/spatie/laravel-image-optimizer/compare/1.7.0...1.7.1
+
 ## 1.7.0 - 2022-01-14
 
 - support Laravel 9
