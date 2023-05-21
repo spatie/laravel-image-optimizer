@@ -124,7 +124,7 @@ If you want to automatically optimize images that get uploaded to your applicati
 
 ```php
 // app/Http/Kernel.php
-protected $routeMiddleware = [
+protected $middlewareAliases = [
    ...
    'optimizeImages' => \Spatie\LaravelImageOptimizer\Middlewares\OptimizeImages::class,
 ];
