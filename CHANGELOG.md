@@ -2,6 +2,27 @@
 
 All notable changes to `laravel-image-optimizer` will be documented in this file
 
+## 1.8.0 - 2024-02-29
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 1.3.5 to 1.3.6 by @dependabot in https://github.com/spatie/laravel-image-optimizer/pull/113
+* Fix `Tests` badge status in README.md by @gomzyakov in https://github.com/spatie/laravel-image-optimizer/pull/115
+* Bump dependabot/fetch-metadata from 1.3.6 to 1.4.0 by @dependabot in https://github.com/spatie/laravel-image-optimizer/pull/116
+* Change $routeMiddleware to $middlewareAliases by @HassanZahirnia in https://github.com/spatie/laravel-image-optimizer/pull/117
+* Bump dependabot/fetch-metadata from 1.4.0 to 1.5.1 by @dependabot in https://github.com/spatie/laravel-image-optimizer/pull/118
+* Bump dependabot/fetch-metadata from 1.5.1 to 1.6.0 by @dependabot in https://github.com/spatie/laravel-image-optimizer/pull/119
+* Bump actions/checkout from 3 to 4 by @dependabot in https://github.com/spatie/laravel-image-optimizer/pull/120
+* Bump actions/setup-node from 3 to 4 by @dependabot in https://github.com/spatie/laravel-image-optimizer/pull/122
+* Laravel 11.x Compatibility by @laravel-shift in https://github.com/spatie/laravel-image-optimizer/pull/124
+
+### New Contributors
+
+* @gomzyakov made their first contribution in https://github.com/spatie/laravel-image-optimizer/pull/115
+* @HassanZahirnia made their first contribution in https://github.com/spatie/laravel-image-optimizer/pull/117
+
+**Full Changelog**: https://github.com/spatie/laravel-image-optimizer/compare/1.7.1...1.8.0
+
 ## 1.7.1 - 2023-01-24
 
 ### What's Changed
