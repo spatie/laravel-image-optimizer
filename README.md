@@ -88,7 +88,7 @@ return [
         ],
 
         Svgo::class => [
-            '--disable=cleanupIDs' // disabling because it is know to cause troubles
+            '--disable=cleanupIDs' // disabling because it is known to cause trouble
         ],
 
         Gifsicle::class => [
