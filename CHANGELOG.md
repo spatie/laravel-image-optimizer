@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-image-optimizer` will be documented in this file
 
+## 1.8.2 - 2025-02-21
+
+### What's Changed
+
+* Laravel 12.x Compatibility by @laravel-shift in https://github.com/spatie/laravel-image-optimizer/pull/131
+
+**Full Changelog**: https://github.com/spatie/laravel-image-optimizer/compare/1.8.1...1.8.2
+
 ## 1.8.1 - 2025-02-21
 
 ### What's Changed
