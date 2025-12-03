@@ -21,6 +21,7 @@
         "spatie/image-optimizer": "^1.2.0"
     },
     "require-dev": {
+        "bamarni/composer-bin-plugin": "^1.8",
         "orchestra/testbench": "^6.23|^7.0|^8.0|^9.0|^10.0",
         "phpunit/phpunit": "^9.4|^10.5|^11.5.3"
     },
@@ -36,10 +37,15 @@
     },
     "scripts": {
         "test": "vendor/bin/phpunit",
-        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes",
+        "facade:lint": "@facade:update --lint",
+        "facade:update": "@php -f facade.php -- Spatie\\\\LaravelImageOptimizer\\\\Facades\\\\ImageOptimizer"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "bamarni/composer-bin-plugin": true
+        }
     },
     "extra": {
         "laravel": {

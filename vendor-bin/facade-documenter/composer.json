@@ -1,0 +1,15 @@
+{
+    "require-dev": {
+        "php": "^8.1",
+        "laravel/facade-documenter": "dev-main"
+    },
+    "repositories": {
+        "facade-documenter": {
+            "type": "vcs",
+            "url": "git@github.com:laravel/facade-documenter.git"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
