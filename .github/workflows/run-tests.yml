@@ -49,7 +49,7 @@ jobs:
         run: sudo apt-get install jpegoptim && sudo apt-get install pngquant && sudo apt-get install gifsicle && sudo apt-get install optipng && sudo apt-get install libjpeg-progs && npm install -g svgo
 
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
