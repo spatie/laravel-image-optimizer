@@ -17,12 +17,12 @@
     ],
     "require": {
         "php": "^8.0",
-        "laravel/framework": "^8.0|^9.0|^10.0|^11.0|^12.0",
+        "laravel/framework": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
         "spatie/image-optimizer": "^1.2.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^6.23|^7.0|^8.0|^9.0|^10.0",
-        "phpunit/phpunit": "^9.4|^10.5|^11.5.3"
+        "orchestra/testbench": "^6.23|^7.0|^8.0|^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^9.4|^10.5|^11.5.3|^12.5.12"
     },
     "autoload": {
         "psr-4": {
