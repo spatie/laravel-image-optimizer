@@ -2,12 +2,12 @@
 
 namespace Spatie\LaravelImageOptimizer\Test;
 
-use PHPUnit\Framework\Attributes\Test;
 use ImageOptimizer;
+use PHPUnit\Framework\Attributes\Test;
 
 class FacadeTest extends TestCase
 {
-        #[Test]
+    #[Test]
     public function it_has_a_facade()
     {
         $testImagePath = $this->getImagePath('logo.png');
