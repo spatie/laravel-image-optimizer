@@ -2,10 +2,10 @@
 
 namespace Spatie\LaravelImageOptimizer\Test;
 
+use PHPUnit\Framework\Attributes\Test;
 use Spatie\ImageOptimizer\OptimizerChain;
 use Spatie\LaravelImageOptimizer\Exceptions\InvalidConfiguration;
 use stdClass;
-use PHPUnit\Framework\Attributes\Test;
 
 class ImageOptimizerTest extends TestCase
 {

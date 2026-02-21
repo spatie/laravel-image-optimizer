@@ -4,8 +4,8 @@ namespace Spatie\LaravelImageOptimizer\Test;
 
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Route;
-use Spatie\LaravelImageOptimizer\Middlewares\OptimizeImages;
 use PHPUnit\Framework\Attributes\Test;
+use Spatie\LaravelImageOptimizer\Middlewares\OptimizeImages;
 
 class MiddlewareTest extends TestCase
 {
