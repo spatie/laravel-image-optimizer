@@ -2,19 +2,20 @@
 
 namespace Spatie\LaravelImageOptimizer\Test;
 
+use PHPUnit\Framework\Attributes\Test;
 use Spatie\ImageOptimizer\OptimizerChain;
 use Spatie\LaravelImageOptimizer\Exceptions\InvalidConfiguration;
 use stdClass;
 
 class ImageOptimizerTest extends TestCase
 {
-    /** @test */
+        #[Test]
     public function it_has_a_valid_default_configuration()
     {
         $this->assertInstanceOf(OptimizerChain::class, app(OptimizerChain::class));
     }
 
-    /** @test */
+        #[Test]
     public function it_will_throw_an_exception_with_a_malconfigured_logger()
     {
         config()->set('image-optimizer.log_optimizer_activity', stdClass::class);
@@ -24,7 +25,7 @@ class ImageOptimizerTest extends TestCase
         app(OptimizerChain::class);
     }
 
-    /** @test */
+        #[Test]
     public function it_can_log_to_the_default_log()
     {
         config()->set('image-optimizer.log_optimizer_activity', true);
@@ -43,7 +44,7 @@ class ImageOptimizerTest extends TestCase
         $this->assertStringContainsString('Start optimizing', $logWriter->getAllLinesAsString());
     }
 
-    /** @test */
+        #[Test]
     public function it_will_throw_an_exception_with_a_malconfigured_optimizer()
     {
         config()->set('image-optimizer.optimizers', [stdClass::class => []]);

@@ -2,13 +2,14 @@
 
 namespace Spatie\LaravelImageOptimizer\Test;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Route;
 use Spatie\LaravelImageOptimizer\Middlewares\OptimizeImages;
 
 class MiddlewareTest extends TestCase
 {
-    /** @test */
+        #[Test]
     public function it_will_try_to_optimize_all_files_in_a_request()
     {
         $originalImagePath = $this->getImagePath('logo.png');
@@ -25,7 +26,7 @@ class MiddlewareTest extends TestCase
         $this->assertDecreasedFileSize($uploadPath, $originalImagePath);
     }
 
-    /** @test */
+        #[Test]
     public function it_will_optimize_all_files_at_all_depths()
     {
         $originalImagePath1 = $this->getImagePath('logo.png');
